@@ -21,5 +21,5 @@ public class ModuloEntity {
 
     @OneToOne
     @JoinColumn(name = "id_instrutor")
-    private InstrutorEntity idinstrutor;
+    private InstrutorEntity idInstrutor;
 }
