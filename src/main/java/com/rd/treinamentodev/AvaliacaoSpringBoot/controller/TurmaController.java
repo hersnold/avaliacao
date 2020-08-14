@@ -16,5 +16,4 @@ public class TurmaController {
     public ResponseEntity listar(){
         return ResponseEntity.ok().body(service.listar());
     }
-
 }

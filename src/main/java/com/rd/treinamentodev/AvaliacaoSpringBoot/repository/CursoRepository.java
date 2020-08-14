@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface CursoRepository extends JpaRepository<CursoEntity, Long> {
-    List<CursoEntity> findByNome(String nome);
+    List<CursoEntity> findByNomeCurso (String nomeCurso);
 }

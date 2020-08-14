@@ -13,10 +13,8 @@ import com.rd.treinamentodev.AvaliacaoSpringBoot.repository.TurmaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -31,13 +29,14 @@ public class TurmaService {
     SimpleDateFormat SDF = new SimpleDateFormat("dd/MM/yyyy");
 
     public List<TurmaDTO> listar(){
-
+        List<TurmaEntity> listEntity = turmaRepository.findAll();
+        List<TurmaDTO> listDTO = new ArrayList<>();
 
         //TODO implementar a conversão da lista de objetos de TurmaEntity para TurmaDTO e retornar a listDTO preenchida
 
 
-        return listar();
 
 
+        return listDTO;
     }
 }
